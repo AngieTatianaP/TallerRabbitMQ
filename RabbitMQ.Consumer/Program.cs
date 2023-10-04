@@ -24,7 +24,7 @@ namespace RabbitMQ.Consumer
                 arguments: null);
             var consumer = new EventingBasicConsumer(channel);
             
-            string connectionString = "Server=tcp:astaller2.database.windows.net,1433;Initial Catalog=Taller2;Persist Security Info=False;User ID=atpenapena;Password=tatis2615};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            string connectionString = "{{connection}}";
 
             consumer.Received += (sender, e) =>
             {
